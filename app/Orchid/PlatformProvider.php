@@ -91,6 +91,11 @@ class PlatformProvider extends OrchidServiceProvider
                 ->icon('lock')
                 ->route('platform.systems.roles')
                 ->permission('platform.systems.roles'),
+
+            Menu::make('Email sender')
+                ->icon('envelope-letter')
+                ->route('platform.email')
+                ->title('Tools')
         ];
     }
 
