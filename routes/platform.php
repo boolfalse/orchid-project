@@ -17,6 +17,7 @@ use App\Orchid\Screens\User\UserListScreen;
 use App\Orchid\Screens\User\UserProfileScreen;
 use Illuminate\Support\Facades\Route;
 use Tabuna\Breadcrumbs\Trail;
+use App\Orchid\Screens\EmailSenderScreen;
 
 /*
 |--------------------------------------------------------------------------
@@ -107,4 +108,4 @@ Route::screen('example-editors', ExampleTextEditorsScreen::class)->name('platfor
 Route::screen('example-cards', ExampleCardsScreen::class)->name('platform.example.cards');
 Route::screen('example-advanced', ExampleFieldsAdvancedScreen::class)->name('platform.example.advanced');
 
-//Route::screen('idea', 'Idea::class','platform.screens.idea');
+Route::screen('email', EmailSenderScreen::class)->name('platform.email');
